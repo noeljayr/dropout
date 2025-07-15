@@ -14,6 +14,7 @@ import NextTopLoader from "nextjs-toploader";
 import Sidebar from "@/components/Sidebar";
 import ViewStudent from "@/components/modals/view-student/ViewStudent";
 import SubmitReport from "@/components/modals/SubmitReport";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Malivenji Risk Monitoring",
@@ -28,13 +29,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={``}>
-        <NextTopLoader showSpinner={false} color="#006ff9" height={2} />
-        <Sidebar />
-        <div className="py-4 flex  h-full w-full overflow-hidden">
-          <Main>{children}</Main>
-        </div>
-        <ViewStudent />
-        <SubmitReport />
+        <Suspense>
+          <NextTopLoader showSpinner={false} color="#006ff9" height={2} />
+          <Sidebar />
+          <div className="py-4 flex  h-full w-full overflow-hidden">
+            <Main>{children}</Main>
+          </div>
+          <ViewStudent />
+          <SubmitReport />
+        </Suspense>
       </body>
     </html>
   );
