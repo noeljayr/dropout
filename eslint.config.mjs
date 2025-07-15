@@ -10,10 +10,20 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  // Keep your existing extended configurations
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+
+  // Add a new object to override and disable rules
   {
     rules: {
-      "no-unused-vars": "off", // Turn off unused variable rule
+      // Disable the base JavaScript 'no-unused-vars' rule
+      "no-unused-vars": "off",
+      
+      // Disable the TypeScript-specific 'no-unused-vars' rule
+      "@typescript-eslint/no-unused-vars": "off",
+
+      // Add any other rules you want to disable here
+      // "some-other-rule": "off",
     },
   },
 ];

@@ -32,7 +32,7 @@ function StudentGuardian({ studentId }: Props) {
       setResponseMessage: () => {},
       id: studentId,
     });
-  }, []);
+  }, [studentId]);
 
   
 
