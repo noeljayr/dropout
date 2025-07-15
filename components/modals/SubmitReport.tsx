@@ -119,7 +119,7 @@ function SubmitReport() {
                 <div className="grid grid-cols-2 gap-4">
                   {data &&
                     data.map((d, index) => (
-                      <div className="flex flex-col gap-2">
+                      <div key={index} className="flex flex-col gap-2">
                         <label htmlFor="">{d.name}  {`(0 - 100%)`}</label>
                         <div className="input-group">
                           <input type="number" min={0} />

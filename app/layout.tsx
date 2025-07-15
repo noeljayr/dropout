@@ -31,7 +31,7 @@ export default function RootLayout({
         <NextTopLoader showSpinner={false} color="#006ff9" height={2} />
         <Sidebar />
         <div className="py-4 flex  h-full w-full overflow-hidden">
-          <Main children={children} />
+          <Main>{children}</Main>
         </div>
         <ViewStudent />
         <SubmitReport />

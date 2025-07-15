@@ -25,7 +25,7 @@ function Login() {
         router.push("/dashboard");
       }, 1500);
     }
-  }, [isSuccess]);
+  }, [isSuccess, router]);
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();

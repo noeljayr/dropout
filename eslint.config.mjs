@@ -16,7 +16,7 @@ const eslintConfig = [
   // Add a new object to override and disable rules
   {
     rules: {
-      // Disable the base JavaScript 'no-unused-vars' rule
+    // Disable the base JavaScript 'no-unused-vars' rule
       "no-unused-vars": "off",
       
       // Disable the TypeScript-specific 'no-unused-vars' rule
