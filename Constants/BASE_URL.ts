@@ -1,0 +1,1 @@
+export const BASE_URL = 'https://xul-dropout-backend.onrender.com/api'

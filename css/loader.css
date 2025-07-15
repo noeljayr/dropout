@@ -1,0 +1,35 @@
+.loader-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #fef6f7 94%, #0000) top/3.8px 3.8px
+      no-repeat,
+    conic-gradient(#0000 30%, #fef6f7);
+  mask: radial-gradient(farthest-side, #0000 calc(100% - 3.8px), #000 0);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(100% - 3.8px),
+    #000 0
+  );
+  animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.primary-loader {
+  background: radial-gradient(farthest-side, #006ff9 94%, #0000) top/3.8px 3.8px
+      no-repeat,
+    conic-gradient(#0000 30%, #006ff9);
+  mask: radial-gradient(farthest-side, #0000 calc(100% - 3.8px), #000 0);
+}
