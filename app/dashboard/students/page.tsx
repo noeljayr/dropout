@@ -1,6 +1,5 @@
 "use client";
 
-
 import AddStudent from "@/components/modals/add-student/AddStudent";
 import NewAssessment from "@/components/modals/NewAssessment";
 import AtRisk from "@/components/pages/students/AtRisk";
@@ -10,7 +9,7 @@ import { IconCloudUpload, IconPlus } from "@tabler/icons-react";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-function page() {
+function Page() {
   const [searchName, setSearchName] = useState("");
   const [filterRisk, setFilterRisk] = useState("");
   const [filterClass, setFilterClass] = useState("");

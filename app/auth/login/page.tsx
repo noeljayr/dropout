@@ -119,7 +119,7 @@ function Login() {
             key={'success'}
             className="font-semibold font-p-3 px-4 py-1.5 bg-green-100 text-green-600 border border-green-300 rounded-4xl"
           >
-            You're logged in and ready to go...
+            You{`'`}re logged in and ready to go...
           </motion.span>
         )}
       </AnimatePresence>

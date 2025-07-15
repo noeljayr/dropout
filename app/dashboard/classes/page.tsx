@@ -17,7 +17,7 @@ type DATA = {
   is_active: true;
 };
 
-function page() {
+function Page() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);

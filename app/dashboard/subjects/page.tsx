@@ -14,7 +14,7 @@ type DATA = {
   description: string;
 };
 
-function page() {
+function Page() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -37,7 +37,6 @@ function page() {
           <span className="opacity-50 font-semibold">Code</span>
           <span className="opacity-50 font-semibold">Type</span>
           <span className="opacity-50 font-semibold">Description</span>
-          
         </div>
 
         <div className="w-full h-full relative overflow-y-auto grid auto-rows-min">
@@ -58,7 +57,6 @@ function page() {
                 <span>{subject.code}</span>
                 <span className="capitalize">{subject.type}</span>
                 <span className="truncate font-p-3">{subject.description}</span>
-                
               </div>
             ))}
         </div>

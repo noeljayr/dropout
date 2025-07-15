@@ -9,7 +9,7 @@ import { IconCloudUpload, IconPlus } from "@tabler/icons-react";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-function page() {
+function Page() {
   const [searchName, setSearchName] = useState("");
   const [filterRisk, setFilterRisk] = useState("");
   const [filterClass, setFilterClass] = useState("");
@@ -24,7 +24,7 @@ function page() {
     <>
       <div className="grid w-full pr-4 grid-rows-[auto_1fr] gap-4 overflow-hidden">
         <div className="grid grid-cols-[auto_40%]">
-            <span className="font-semibold mr-auto">End of term reports</span>
+          <span className="font-semibold mr-auto">End of term reports</span>
           <div className="grid grid-cols-[auto_1fr] w-full">
             <FilterByClass
               setFilterClass={setFilterClass}
